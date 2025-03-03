@@ -159,6 +159,7 @@
   transition: background 0.3s ease;
   margin-top: 30px;  
 }
+/* 
 .feed {
   position: absolute;
   top: 150px;
@@ -168,7 +169,7 @@
   background: #FFFFFF;
   border-radius: 10px;
   border: solid 2px black;
-}
+} */
 
 .right-sidebar {
   position: absolute;
@@ -217,4 +218,91 @@
 .artist-username {
   font-size: 12px;
   color: gray;
+}
+
+
+/* Center the feed-container */
+.feed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  min-height: 100vh;
+  position: absolute;
+  top: 140px;
+  left: 470px;
+}
+
+/* Fixed Box for Each Post */
+.feed {
+  width: 550px; /* Reduce width */
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: solid 2px black;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 40px; /* Reduce size */
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 14px;
+  color: gray;
+}
+
+.options {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Post Text */
+.post-text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Post Image */
+.post-image {
+  width: 100%; /* Adjust width */
+  max-height: 280px; /* Limit height */
+  object-fit: cover; /* Crop the image properly */
+  border-radius: 10px;
+  margin-top: 10px;
+}
+/* Post Actions (Likes, Comments, Shares) */
+.post-actions {
+  display: flex;
+  justify-content: space-around; /* Space between icons */
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+  border-top: 1px solid #ddd; /* Light border on top */
+}
+
+.post-actions span {
+  cursor: pointer;
 }
