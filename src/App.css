@@ -39,8 +39,12 @@
  
 
 }
-
-.logo{
+.logo {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  /* text-align: center;  */
+  position: absolute;
   top: 40px;
   left: 200px;
   width: 260px;
@@ -48,10 +52,6 @@
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border-radius: 10px;
   opacity: 1;
-  /* border: solid 2px black; */
-  position: absolute;
-  /* border: solid 2px black; */
-  padding: 1px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -92,8 +92,8 @@
 }
 
 .search-icon img {
-  width: 30px; 
-  height: 30px;
+  width: 50px; 
+  height: 50px;
 }
 
 .search-bar {
@@ -104,7 +104,6 @@
   font-size: 18px;
   padding: 10px;
 }
-
 
 
 .headerrightside {
@@ -118,10 +117,11 @@
   opacity: 1;
 
   display: flex;
-  justify-content: center;  
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
 }
 
-.headerrightside h1  {
+.headerrightside h1 {
   text-align: center;
   font: normal normal 600 16px/19px Gilroy;
   letter-spacing: 0px;
