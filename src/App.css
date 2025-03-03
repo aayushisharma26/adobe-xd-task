@@ -1,7 +1,7 @@
 .main{
   width: 1600px;
   height: 1800px;
-  border: solid 2px black;
+  /* border: solid 2px black; */
   top:0px;
   left:0px;
   background: #F5F5F5 0% 0% no-repeat padding-box;
@@ -9,6 +9,20 @@
   margin-left: 40px;
   margin-top:10px
 }
+
+
+
+.header{
+  width: 1600px;
+  height: 10px;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+
+}
+
+
+
+
+
 .logo-dun{
   top: 67px;
   left: 235px;
@@ -20,7 +34,10 @@
   color: #101010;
   opacity: 1;
   padding-left:20px;
-  padding-top:20px
+  padding-bottom:10px;
+  
+ 
+
 }
 
 .logo{
@@ -33,6 +50,9 @@
   opacity: 1;
   /* border: solid 2px black; */
   position: absolute;
+  /* border: solid 2px black; */
+  padding: 1px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .searchicon {
@@ -65,6 +85,10 @@
   align-items: center;
   padding: 0 15px;
   gap: 10px; 
+  border-radius: 10px;
+  /* border: solid 2px black; */
+  /* padding: 15px; */
+  box-shadow: 10px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .search-icon img {
@@ -236,10 +260,10 @@
 
 /* Fixed Box for Each Post */
 .feed {
-  width: 550px; /* Reduce width */
+  width: 600px; /* Reduce width */
   background: #FFFFFF;
   border-radius: 10px;
-  border: solid 2px black;
+  /* border: solid 2px black; */
   padding: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -263,6 +287,7 @@
   margin: 0;
   font-size: 16px;
   font-weight: bold;
+  margin-right:400px
 }
 
 .user-info p {
@@ -282,25 +307,23 @@
   margin-bottom: 10px;
 }
 
-/* Post Image */
 .post-image {
-  width: 100%; /* Adjust width */
-  max-height: 280px; /* Limit height */
-  object-fit: cover; /* Crop the image properly */
+  width: 100%; 
+  max-height: 280px; 
+  object-fit: cover; 
   border-radius: 10px;
   margin-top: 10px;
 }
-/* Post Actions (Likes, Comments, Shares) */
 .post-actions {
   display: flex;
-  justify-content: space-around; /* Space between icons */
+  justify-content: space-around; 
   align-items: center;
   margin-top: 10px;
   padding: 10px 0;
   font-size: 16px;
   font-weight: bold;
   color: #444;
-  border-top: 1px solid #ddd; /* Light border on top */
+  border-top: 1px solid #ddd; 
 }
 
 .post-actions span {
